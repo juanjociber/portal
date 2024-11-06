@@ -1,0 +1,1 @@
+select s.empresa, p.pregunta, r.respuesta from tblsesiones s inner join tblrespuestas r on s.idsesion=r.idsesion inner join tblpreguntas p on r.idpregunta=p.idpregunta;
