@@ -1,80 +1,378 @@
+<!-- <style>
+
+  .footer-bottom {
+    background: #13316c;
+    color: white;
+    padding: 20px 0;
+  }
+
+  .footer-bottom h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-bottom ul li {
+    line-height: 30px;
+  }
+
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  .footer-bottom a:hover {
+    color: #f0a500;
+  }
+
+  .footer-bottom-text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: #11275482;
+    padding: 15px 0;
+  }
+
+  .accordion-footer {
+    display: none;
+    flex-direction: column;
+  }
+
+  .accordion-footer.active {
+    display: flex;
+  }
+
+  .accordion-title {
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+  }
+
+  .accordion-title:hover {
+    color: #f0a500;
+  }
+
+  .accordion-title i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-title.open i {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: 768px) {
+    .accordion-footer {
+      display: flex !important;
+    }
+
+    .accordion-title {
+      cursor: default;
+      border: none;
+      padding: 0;
+    }
+  }
+</style> -->
+
+<!-- <footer class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="accordion-title">
+          <i class="fas fa-plus"></i> PÁGINAS
+        </h3>
+        <ul id="services" class="accordion-footer" onclick="toggleAccordion('services', this)">
+          <li><a href="#">Servicios</a>
+            <ul>
+              <li><a href="/servicios/in-house-o-por-proyectos.php">IN HOUSE O POR PROYECTOS</a></li>
+              <li><a href="/servicios/servicio-taller.php">SERVICIO TALLER</a></li>
+              <li><a href="/servicios/auxilio-mecanico-o-emergencias.php">AUXILIO MECÁNICO O EMERGENCIAS</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Mundo GPEM</a>
+            <ul>
+              <li><a href="/empresa/acerca-de-nosotros">ACERCA DE NOSOTROS</a></li>
+              <li><a href="/empresa/bolsa-de-trabajo">BOLSA DE TRABAJO</a></li>
+              <li><a href="/empresa/contactanos">CONTACTANOS</a></li>
+            </ul>
+          </li>
+          <li><a href="/portal/tienda/productos.php">Productos</a></li>
+          <li><a href="#">Aplicaciones cliente</a>
+            <ul class="nav-dropdown">
+              <li><a href="/gesmannet/">ANÁLISIS DE LUBRICANTES</a></li>
+              <li><a href="https://my1442.geotab.com/gpem/#map">TELEMETRÍA</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="accordion-title" onclick="toggleAccordion('follow', this)">
+          <i class="fas fa-plus"></i> SÍGUENOS
+        </h3>
+        <ul id="follow" class="accordion-footer">
+          <li><a href="https://www.facebook.com/gpemsac" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://pe.linkedin.com/company/gpem-sac" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/channel/UCnI6Svnk_AFSg0dd-sy32aw" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+          <li><a href="https://www.instagram.com/gpemsac/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://wa.me/51982827525?text=Hola.+Deseo+cotizar+algunos+productos.+Puede+ayudarme%3F" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-4">
+        <h3 class="accordion-title" onclick="toggleAccordion('contact', this)">
+          <i class="fas fa-plus"></i> CONTACTOS
+        </h3>
+        <ul id="contact" class="accordion-footer">
+          <li><strong>Visítanos:</strong> Av. Los Incas S/N - Comas | Lima, Perú</li>
+          <li><strong>Escríbenos:</strong> hola@gpemsac.com</li>
+          <li><strong>Llámanos:</strong> Teléfono: 01-7130628 (300)</li>
+          <li><strong>Celular:</strong> +51 982827525</li>
+          <li><a href="/empresa/contactos">Ver más opciones...</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom-text mb-0 text-white">
+    <strong>&copy;2024</strong> <span style="font-weight: 300;">All Rights Reserved. Design by</span>
+    <strong>GPEM SAC</strong>
+  </p>
+</footer> -->
+
 <style>
-    .footer-bottom{
-        background:#f79109;
-        bottom: 0px;
-    }
 
-    .segment-two h3:before{
-        content:'|';
-        color:#fff;
-        padding-right:5px;
+  /*=============================
+-> FOOTER
+===============================*/
+.footer{
+    background-color: #1c1c1c;
+    color: var(--gm-White-100);
+    padding-top: 5rem;
+}
+.footer-campo{
+    margin-bottom: 5rem;
+}
+.footer-campo:last-child{
+    margin-bottom: 0;
+    border-top:1px solid rgba(128, 128, 128, 0.231);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-campo h4{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.footer-campo p{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.694);
+}
+.footer-campo .contactar{
+    margin-bottom: 0;
+    color: var(--gm-White-100);
+}
+.footer-campo .contactar-detalle{
+    margin-bottom: 2rem;
+}
+.footer-campo small, .footer-campo small a{
+    color: var(--gm-White-100);
+    font-size: 1.1rem;
+}
+@media(min-width:576px){
+    .footer-campo small, .footer-campo small a{
+        font-size: 1.4rem;
     }
+}
+@media(min-width:768px){
+    .footer-campos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-campo:last-child{
+        grid-column: 1 / 3;
+    }
+    .footer-campo small, .footer-campo small a{
+        font-size: 1.3rem;
+    }
+}
+@media(min-width:992px){
+    .footer-campos{
+        grid-template-columns: 2fr 1fr 2fr 2fr;
+    }
+    .footer-campo:last-child{
+        grid-column: 1 / 5;
+    }
+}
+@media(min-width:1200px){
+    .footer-campos{
+        margin: 0 2rem;
+    }
+}
 
-    .segment-two ul{
-        margin:0;
-        padding:0;
-        list-style:none;
-    }
+.footer-input{
+    position: relative;
+    width: 90%;
+}
+.footer-input input{
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.285);
+    background-color: #1c1c1c5e;
+    color: rgba(255, 255, 255, 0.694);
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 15px 10px;
+    border-radius: 4px;
+    outline: unset;
+    transition: box-shadow ease .4s;
+}
+.footer-input input:hover{
+    box-shadow: 0 0 5px rgb(22, 121, 144);
+}
 
-    .segment-two ul li{
-        border-bottom: 1px solid rgba(255, 255, 255, 0.363);
-        line-height: 40px;
-    }
+.footer-input i{
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    padding: 12px;
+    border-radius: 3px;
+    background: var(--gm-Red-700);
+    cursor: pointer;
+}
 
-    .footer-bottom-text{
-        text-align:center;
-        background-color: #eb8600;
-        line-height:75px;
+.items-sociales a i{
+    padding: 10px;
+    color: white;
+    background: rgba(35, 43, 59, 0.939);
+    border-radius: 4px;
+    transition: background ease .4s;
+    margin-right: 0.5rem;
+    margin-bottom: 3rem;
+}
+@media(min-width:992px){
+    .footer-input input{
+        padding: 11.5px 16px;
     }
-    .lead{
-      font-weight:800;
+    .footer-input i{
+        top: 5px;
+        right: 5px;
+        padding: 10px;
     }
-    .etiqueta-footer{
-      font-weight:300;
-      text-decoration: none;
-      color:#fff;
-    }
-    .etiqueta-footer:hover{
-      color:#fff;
-    }
+}
+.items-sociales a i:hover{
+    background: var(--gm-Red-700);
+}
+.items-servicios li{
+    color:rgba(255, 255, 255, 0.694);
+    font-weight: 300;
+    margin: 2rem 0;
+}
+.items-publicaciones li{
+    color:rgba(255, 255, 255, 0.694);
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+#txt,#txt-clientes{
+    font-size: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
 </style>
 
-<footer class="footer-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 segment-two mt-3 mb-4">
-                <h3 class="text-white lead">PÁGINAS</h3>
-                <ul>
-                    <li><a class="etiqueta-footer" href="/productos" class="text-decoration-none text-white">Productos</a></li>
-                    <li><a class="etiqueta-footer" href="/servicios/energia" class="text-decoration-none text-white">Servicios</a></li>
-                    <li><a class="etiqueta-footer" href="/empresa/nosotros" class="text-decoration-none text-white">Mundo GPEM</a></li>
-                    <!-- <li><a class="etiqueta-footer" href="/productos" class="text-decoration-none text-white">Productos</a></li> -->
-                    <li><a class="etiqueta-footer" href="#" class="text-decoration-none text-white">Contáctanos</a></li>
-                    <!-- <li><a class="etiqueta-footer" href="/empresa/trabaja-con-nosotros" class="text-decoration-none text-white">Trabaja con Nosotros</a></li> -->
-                </ul>
-            </div>
-            <div class="col-md-4 segment-two mt-3 mb-4">
-                <h3 class="text-white lead">SÍGUENOS</h3>
-                <ul>
-                    <li><a class="etiqueta-footer" href="https://www.facebook.com/gpemsac" target="_blank" class="text-decoration-none text-white"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a class="etiqueta-footer" href="https://pe.linkedin.com/company/gpem-sac" target="_blank" class="text-decoration-none text-white"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a class="etiqueta-footer" href="https://www.youtube.com/channel/UCnI6Svnk_AFSg0dd-sy32aw" target="_blank" class="text-decoration-none text-white"><i class="fab fa-youtube"></i> Youtube</a></li>
-                    <li><a class="etiqueta-footer" href="https://www.instagram.com/gpemsac/" target="_blank" class="text-decoration-none text-white"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a class="etiqueta-footer" href="https://wa.me/51982827525?text=https%3A%2F%2Fgpemsac.com%0D%0A%0D%0AHola.+Deseo+cotizar+algunos+productos.+Puede+ayudarme%3F" target="_blank" class="text-decoration-none text-white"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 segment-two mt-3 mb-4">
-                <h3 class="text-white lead">CONTACTOS</h3>
-                <ul>
-                    <li class="etiqueta-footer">Av. Los Incas S/N - Comas | Lima, Perú</li>
-                    <li class="etiqueta-footer">Correo: hola@gpemsac.com</li>
-                    <li class="etiqueta-footer">Teléfono: 01-7130628 (300)</li>
-                    <li class="etiqueta-footer">Celular: +51982827525</li>
-                    <li><a class="etiqueta-footer" href="/empresa/contactos">Ver más opciones...</a></li>
-                    <!--<li><a href="javascript:void(0);">Celular: +51982827525</a></li>-->
-                </ul>
-            </div>
-        </div>
-    </div>
-    <p class="footer-bottom-text mb-0 text-white"><strong> &copy;2024 </strong><span style="font-weight:300">All Right reserved by. Design by </span><strong>GPEMSAC</strong></p>
+
+
+<footer>
+  <div class="footer">
+      <div class="footer-campos">
+          <div class="footer-campo contenedor">
+              <h4>Sobre nosotros</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Culpa suscipit magni,ducimus exercitationem.</p>
+              <div class="items-sociales">
+                  <a href="#"><i class='bx bxl-facebook'></i></a>
+                  <a href="#"><i class='bx bxl-twitter'></i></a>
+                  <a href="#"><i class='bx bxl-linkedin'></i></a>
+              </div>
+              <div class="footer-input">
+                  <input type="email" placeholder="Ingrese su correo aquí">
+                  <i class='bx bx-navigation'></i>
+              </div>
+          </div>
+
+          <div class="footer-campo contenedor">
+              <h4>Servicios</h4>
+              <ul class="items-servicios">
+                  <li>&check; Servicio 1</li>
+                  <li>&check; Servicio 2</li>
+                  <li>&check; Servicio 3</li>
+                  <li>&check; Servicio 4</li>
+              </ul>
+          </div>
+
+          <div class="footer-campo contenedor">
+              <h4>Publicaciones recientes</h4>
+              <ul class="items-publicaciones">
+                  <li>Publicación 1</li>
+                  <li>Publicación 2</li>
+                  <li>Publicación 3</li>
+                  <li>Publicación 4</li>
+              </ul>
+          </div>
+
+          <div class="footer-campo contenedor">
+              <h4>Contacta con nosotros</h4>
+              <p class="contactar">Dirección</p>
+              <p class="contactar-detalle">Jr. Dirección S/N</p>
+              <p class="contactar">Teléfono</p>
+              <p class="contactar-detalle">505 050 505</p>
+              <p class="contactar">Email</p>
+              <p class="contactar-detalle">example@dominio.com</p>
+          </div>
+        
+          <div class="footer-campo contenedor">
+              <small class="copyrigth">Copyrigth &copy; 2021 | Diseñado y Desarrollado por: <a
+                      class="autor" href="tel:+953659803">Juan J. Huiza</a></small>
+          </div>
+      </div>
+  </div>
 </footer>
+
+
+
+
+
+<!-- <script>
+
+  function toggleAccordion(id, element) {
+    const section = document.getElementById(id);
+    const icon = element.querySelector('i');
+
+    event.preventDefault();
+
+    section.classList.toggle('active');
+    if (section.classList.contains('active')) {
+      icon.classList.remove('fa-plus');
+      icon.classList.add('fa-minus');
+    } else {
+      icon.classList.remove('fa-minus');
+      icon.classList.add('fa-plus');
+    }
+  }
+</script> -->
