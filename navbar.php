@@ -1,7 +1,3 @@
-<style>
-  
-</style>
-
 <link rel="shortcut icon" href="/mycloud/logos/favicon.ico">
 <link rel="stylesheet" href="/mycloud/library/gpemsac/portal/css/portal-menu.css">
 
@@ -11,7 +7,7 @@
       <nav id="navigation1" class="navigation">
         <!-- Logo GPEM -->
         <div class="nav-header">
-          <a class="nav-brand" href="/index.html"><img src="/mycloud/portal/empresa/logos/logo-gpem.png" height="50" class="d-inline-block align-top" alt=""></a>
+          <a class="nav-brand" href="/index.php"><img src="/mycloud/portal/empresa/logos/logo-gpem.png" height="50" alt=""></a>
           <div class="nav-toggle"></div>
         </div>
         <!-- Buscar producto -->
@@ -29,6 +25,9 @@
         </div>
         <!-- Menus Wrapper -->
         <div class="nav-menus-wrapper">
+          <div class="nav-header-responsive">
+            <a href="/index.php"><img src="/mycloud/portal/empresa/logos/logo-gpem.png" height="50" alt=""></a>
+          </div>
           <ul class="nav-menu align-to-right">
             <li><a href="#" id="menu-servicios">SERVICIOS</a>
               <ul class="nav-dropdown">
@@ -187,7 +186,7 @@
     </div>
   </div>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/mycloud/library/jquery-3.5.1/jquery-3.5.1.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script src="/mycloud/library/gpemsac/portal/js/portal-menu.js"></script>
 <script src="/mycloud/library/gpemsac/portal/js/menu.js"></script>
